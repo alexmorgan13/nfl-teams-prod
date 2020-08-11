@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>NFL Teams</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="selector">
+        <form class="selector__form">
+          <div class="selector__block">
+            <h3 class="selector__block-title">Конференция</h3>
+            <ul class="selector__radio-list">
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="AFC" data-list="conference">АФК
+                  <input class="visually-hidden" type="radio" name="conference" id="AFC">
+                </label>
+              </li>
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="NFC" data-list="conference">НФК
+                  <input class="visually-hidden" type="radio" name="conference" id="NFC">
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="selector__block">
+            <h3 class="selector__block-title">Дивизион</h3>
+            <ul class="selector__radio-list">
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="East" data-list="division">Восток
+                  <input class="visually-hidden" type="radio" name="division" id="East">
+                </label>
+              </li>
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="North" data-list="division">Север
+                  <input class="visually-hidden" type="radio" name="division" id="North">
+                </label>
+              </li>
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="South" data-list="division">Юг
+                  <input class="visually-hidden" type="radio" name="division" id="South">
+                </label>
+              </li>
+              <li class="selector__radio-item">
+                <label class="selector__radio" for="West" data-list="division">Запад
+                  <input class="visually-hidden" type="radio" name="division" id="West">
+                </label>
+              </li>
+            </ul>
+          </div>
+          <button class="selector__btn btn">Показать</button>
+        </form>
+      </section>
+
+      <section class="result">
+        <h2 class="result__title"></h2>
+        <div class="result__content"></div>
+      </section>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+  </div></body>
+</html>
+
+<!-- .box {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .box__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .box__title {
+        display: block;
+        margin: 30px auto;
+      }
+
+      form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin: 100px auto;
+      }
+
+      .team {
+        background: #000;
+      } -->
